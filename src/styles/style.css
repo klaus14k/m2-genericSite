@@ -24,6 +24,7 @@ header > button {
 header > button:hover {
     background-color: var(--brand_color_2);
     border: 1px solid var(--brand_color_2);
+    cursor: pointer;
 }
 main {
     margin-top: 60px;
