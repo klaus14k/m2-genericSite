@@ -1,9 +1,9 @@
 header {
-    height: 80px;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    padding: 20px 0;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -24,7 +24,6 @@ header > button {
 header > button:hover {
     background-color: var(--brand_color_2);
     border: 1px solid var(--brand_color_2);
-    cursor: pointer;
 }
 main {
     margin-top: 60px;
@@ -47,19 +46,22 @@ footer {
     gap: 40px;
 }
 #first_section > h1 {
+    margin: 0px 120px;
+    text-align: start;
     font-size: 52px;
     color: var(--grey_5);
 }
 #first_section > p {
-    text-align: center;
     margin: 0px 120px;
+    text-align: start;
 }
 #span_highlight {
     color: var(--brand_color_2);
 }
-#span_aboutUs {
+#button_aboutUs {
     padding: 15px 20px;
     background-color: var(--brand_color_1);
+    border: none;
     color: #F8F9FA;    
     font-size: 14px;
 }
@@ -99,10 +101,11 @@ footer {
 #left_half > h2 {
     width: max-content;
 }
-#left_half > span {
+#left_half > button {
     padding: 20px 20px;
     background-color: var(--brand_color_1);
     color: #F8F9FA;
+    border: none;
     font-size: 14px;
 }
 #right_half {
@@ -166,6 +169,7 @@ footer {
     padding: 10px;
     background-color: var(--grey_1);
     border: 2px solid var(--brand_color_1);
+    animation: modalOpen 0.5s;
 }
 .modal__controller::backdrop {
     background-color: var(--background-color);
@@ -233,4 +237,11 @@ footer {
 }
 .modal__send:hover {
     background-color: var(--brand_color_2);
+}
+
+@keyframes modalOpen {
+    0% {transform: translateY(-200%)};
+    33% {transform: translateY(-100%)};
+    66% {transform: translateY(-50%)};
+    100% {transform: translateY(0%)};
 }

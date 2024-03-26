@@ -34,3 +34,7 @@ h3 {
 p {
     color: var(--grey_3);
 }
+button {
+    cursor: pointer;
+    font-family: 'Inter', sans-serif
+}
