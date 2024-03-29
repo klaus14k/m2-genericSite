@@ -17,9 +17,14 @@
     outline: 1px solid var(--brand_color_2);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--grey_1);
+    transition: 0.5s;
 }
 h2 {
   color: var(--grey_5);
